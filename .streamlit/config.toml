@@ -1,3 +1,4 @@
 [theme]
+base = "dark"
 paddingBottom = "0rem"
 paddingTop = "2rem" 
