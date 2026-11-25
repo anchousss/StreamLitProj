@@ -22,7 +22,7 @@ st.markdown(
 with st.sidebar:
     st.header("ℹ️ О сервисе")
     st.write("**Модель:** CNN, Fashion-MNIST")
-    st.write("**Прошло итераций (эпох):** 20")
+    st.write("**Классов:** 10")
     st.write("**Точность (test):** ~92%")
     try:
         r = requests.get(f"{API_URL}/health", timeout=2)
