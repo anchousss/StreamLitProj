@@ -22,7 +22,7 @@ st.markdown(
 with st.sidebar:
     st.header("ℹ️ О сервисе")
     st.write("**Модель:** CNN, Fashion-MNIST")
-    st.write("**Классов:** 10")
+    st.write("**Прошло эпох:** 20")
     st.write("**Точность (test):** ~92%")
     try:
         r = requests.get(f"{API_URL}/health", timeout=2)
@@ -95,4 +95,4 @@ if uploaded_file is not None:
                     st.error(f"Ошибка API {response.status_code}: {response.text}")
             except requests.exceptions.RequestException as e:
                 st.error(f"Не удалось соединиться с API: {e}")
-                st.info("Проверь, что API запущен: `uvicorn api.main:app --reload`")
+                st.info("Проверьте, что API запущен.")
